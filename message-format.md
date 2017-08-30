@@ -54,6 +54,8 @@ msg = {
     "seq": 12,
 
     # Announced networks, OPTIONAL
+    # A router with only a IPv4 address MUST NOT advertise IPv6 networks and
+    # vice versa
     "networks": {
         "1.2.3.4/12": None,
         # Additional network information, OPTIONAL
