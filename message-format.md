@@ -109,6 +109,9 @@ msg = {
         }
     },
 
+    # request a full update from all or the specified nodes, OPTIONAL
+    "request-full": any((True, ["NODE_ID"])),
+
     # requesting reflection, OPTIONAL
     "reflector": {
         "seq": 666  # Example of a reflection request
@@ -196,6 +199,9 @@ msg = {
             "loss": 0.01
         }
     },
+
+    # request a full update from all or the specified nodes, OPTIONAL
+    "request-full": any((True, ["NODE_ID", ...])),
 
     # requesting reflection, OPTIONAL
     "reflector": {
