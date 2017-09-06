@@ -162,19 +162,22 @@ msg = {
     "addr-v6": "abcd:ef12::1234",
 
     # all reachable routes
-    # If present it replaces the previous data on a NODE_ID basis.
+    # If present it replaces the previous data on a NODE_ID basis, purging
+    # entries with the value None
     "routing-data": {
         # For every policy
         "POLICY": {
             # For every reachable node
             "NODE_ID": {
                 "path": "NODE_ID>[1]>NODE_ID>[2]>NODE_ID",
-            }
+            },
+            "NODE_ID": None,
         }
     },
 
     # all nodes referenced in routing-data
-    # If present it replaces the previous data on a NODE_ID basis.
+    # If present it replaces the previous data on a NODE_ID basis, purging
+    # entries with the value None
     "node-data": {
         "NODE_ID": {
             "networks": {
@@ -183,7 +186,8 @@ msg = {
                     "retracted": True
                 }
             }
-        }
+        },
+        "NODE_ID": None,
     },
 
     # all links referenced in "path" in the routing-data
