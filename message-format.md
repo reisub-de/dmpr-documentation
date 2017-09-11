@@ -113,7 +113,7 @@ msg = {
     "request-full": any((True, ["NODE_ID"])),
 
     # requesting reflection, OPTIONAL
-    "reflector": {
+    "reflect": {
         "seq": 666  # Example of a reflection request
     },
 
@@ -208,7 +208,7 @@ msg = {
     "request-full": any((True, ["NODE_ID", ...])),
 
     # requesting reflection, OPTIONAL
-    "reflector": {
+    "reflect": {
         "seq": 666  # Example of a reflection request
     },
 
