@@ -118,7 +118,7 @@ msg = {
     },
 
     # all received reflection requests, REQUIRED, can be omitted if empty
-    "reflections": {
+    "reflected": {
         "NODE_ID": {
             "seq": 1234  # Example of a reflected entry
         }
@@ -214,7 +214,7 @@ msg = {
 
     # all received reflection requests, REQUIRED, can be omitted if empty
     # If present replaces the previous data on a per NODE_ID basis
-    "reflections": {
+    "reflected": {
         "NODE_ID": {
             "seq": 1234  # Example of a reflected entry
         }
